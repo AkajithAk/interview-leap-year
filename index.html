@@ -1,0 +1,30 @@
+<html>
+<head>
+    <title>hi</title>
+    
+<script>
+	function check_leapyear(){ 
+		var year;
+  
+		year = document.getElementById("year").value;
+  
+		if( (0 == year % 4) && (0 != year % 100) || (0 == year % 400) )
+		{
+		 alert(year+" is a leap year");  
+         document.getElementById("value").innerHTML=year+" is a leap year"; 
+		}
+		else
+		{
+			 alert(year+" is not a leap year"); 
+             document.getElementById("value").innerHTML=year+" is not a leap year"; 
+		}
+	}
+</script>
+</head>
+<body> 
+<h3 id="value">Leap year or not</h3>
+<input type="text" id="year"></input>
+<button onclick="check_leapyear()">Check</button>
+<h5>Ajith kumar s</h5>
+</body>
+</html>
